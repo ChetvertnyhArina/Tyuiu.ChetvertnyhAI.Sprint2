@@ -42,7 +42,7 @@ namespace Tyuiu.ChetvertnyhAI.Sprint2.Task5.V8.Lib
                         n = n - 1;
                         break;
                 }
-                res = ($"{n}.{m}");
+                res = ($"{n}.{m.ToString("D2")}");
                 return res;
 
             }
