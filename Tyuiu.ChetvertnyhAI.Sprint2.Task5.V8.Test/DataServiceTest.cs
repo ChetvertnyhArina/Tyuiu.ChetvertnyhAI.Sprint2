@@ -8,12 +8,9 @@ namespace Tyuiu.ChetvertnyhAI.Sprint2.Task5.V8.Test
         public void FindDateOfPreviousDay()
         {
             DataService ds = new DataService();
-            int m = 9;
-            int n = 8;
-            string res = ds.FindDateOfPreviousDay(n, m);
-            string wait = "07." + m;
-            Assert.AreEqual(wait, res);
-
+            Assert.AreEqual("1.7", ds.FindDateOfPreviousDay(7, 2));
+            Assert.AreEqual("4.10", ds.FindDateOfPreviousDay(10, 5));
+            Assert.AreEqual("31.12", ds.FindDateOfPreviousDay(1, 1));
 
         }
     }
