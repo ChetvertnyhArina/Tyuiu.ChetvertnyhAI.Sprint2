@@ -53,7 +53,7 @@ namespace Tyuiu.ChetvertnyhAI.Sprint2.Task6.V10.Lib
                         n = n - 1;
                         break;
                 }
-                res = ($"{n}.{m.ToString("D2")}.{year}");
+                res = ($"{n.ToString("D2")}.{m.ToString("D2")}.{year}");
                 return res;
 
             }
